@@ -1,0 +1,5 @@
+#Tue Jun 29 12:20:45 CEST 2010
+eclipse.preferences.version=1
+org.eclipse.contribution.weaving.jdt.reindex=false
+org.eclipse.contribution.weaving.jdt.ask=true
+org.eclipse.contribution.weaving.jdt.version=1.0.0.v20100108

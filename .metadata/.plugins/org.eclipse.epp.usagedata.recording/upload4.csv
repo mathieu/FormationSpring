@@ -1,0 +1,26 @@
+what,kind,bundleId,bundleVersion,description,time
+started,bundle,org.eclipse.wst.common.modulecore,1.1.300.v200904132230,"org.eclipse.wst.common.modulecore",1277710206684
+started,bundle,org.eclipse.wst.common.project.facet.core,1.4.0.v200906080535,"org.eclipse.wst.common.project.facet.core",1277710206684
+started,bundle,org.eclipse.wst.jsdt.core,1.0.200.v200905201910,"org.eclipse.wst.jsdt.core",1277710206700
+started,bundle,org.eclipse.wst.jsdt.manipulation,1.0.100.v200809240707,"org.eclipse.wst.jsdt.manipulation",1277710206715
+started,bundle,org.eclipse.wst.jsdt.ui,1.0.200.v200905242047,"org.eclipse.wst.jsdt.ui",1277710206715
+started,bundle,org.eclipse.wst.sse.core,1.1.400.v200905141750,"org.eclipse.wst.sse.core",1277710206731
+started,bundle,org.eclipse.wst.validation,1.2.102.v200905201610,"org.eclipse.wst.validation",1277710206731
+started,bundle,org.eclipse.wst.web,1.1.300.v200901261500,"org.eclipse.wst.web",1277710206731
+started,bundle,org.eclipse.wst.ws.service.policy.ui,1.0.102.v200903070248,"org.eclipse.wst.ws.service.policy.ui",1277710206731
+started,bundle,org.eclipse.wst.xml.core,1.1.400.v200904300540,"org.eclipse.wst.xml.core",1277710206762
+os,sysinfo,,,"win32",1277710206762
+arch,sysinfo,,,"x86",1277710206762
+ws,sysinfo,,,"win32",1277710206762
+locale,sysinfo,,,"fr_FR",1277710206762
+processors,sysinfo,,,"2",1277710206762
+java.runtime.name,sysinfo,,,"Java(TM) SE Runtime Environment",1277710206762
+java.runtime.version,sysinfo,,,"1.6.0_17-b04",1277710206762
+java.specification.name,sysinfo,,,"Java Platform API Specification",1277710206762
+java.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1277710206762
+java.specification.version,sysinfo,,,"1.6",1277710206762
+java.vendor,sysinfo,,,"Sun Microsystems Inc.",1277710206762
+java.version,sysinfo,,,"1.6.0_17",1277710206762
+java.vm.info,sysinfo,,,"mixed mode",1277710206762
+java.vm.name,sysinfo,,,"Java HotSpot(TM) Client VM",1277710206762
+java.vm.specification.name,sysinfo,,,"Java Virtual Machine Specification",1277710206762

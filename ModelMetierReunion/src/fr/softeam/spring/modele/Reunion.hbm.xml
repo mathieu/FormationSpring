@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UtF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="fr.softeam.spring.modele.Reunion" table="reunion">
+    <id name="id">
+      <generator class="assigned"/>
+    </id>
+    <property name="dateDebut"/>
+    <property name="dateFin"/>
+    <property name="objet"/>
+    <many-to-one name="organisateur" class="fr.softeam.spring.modele.Personne">
+      <column name="organisateur_fk"/>
+    </many-to-one>
+    <set name="participants" table="participe">
+      <key column="reunion_fk"/>
+      <many-to-many class="fr.softeam.spring.modele.Personne">
+        <column name="personne_fk"/>
+      </many-to-many>
+    </set>
+    <many-to-one name="salle" class="fr.softeam.spring.modele.Salle">
+      <column name="salle_fk"/>
+    </many-to-one>
+  </class>
+</hibernate-mapping>

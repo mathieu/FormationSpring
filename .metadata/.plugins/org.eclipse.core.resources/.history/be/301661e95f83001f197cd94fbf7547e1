@@ -1,0 +1,10 @@
+package fr.softeam.formation.spring.exo2;
+
+public interface ICalculatrice {
+	public Integer additionner(Integer operande);
+	public int soustraire(int operande);
+	public int multiplier(int operande);
+	public int diviser(int operande);
+	public void initaliser();
+	public int recupererTotal();
+}

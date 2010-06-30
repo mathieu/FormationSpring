@@ -1,0 +1,5 @@
+package fr.softeam.formation.spring.exo1.impl;
+
+public class OperationMultiplicationImpl {
+
+}

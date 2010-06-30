@@ -1,0 +1,14 @@
+package fr.softeam.formation.spring.exo2.advice;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+
+@Aspect
+public class LoggerAdvice {
+	@Before("execution(* fr.softeam.formation.spring.exo2.impl.Operation*Impl() && args(value)")
+	public void log(ProceedingJoinPoint jp, Integer value) {
+		System.out.println("LoggerAdvice.log() : " + jp.getTarget().getClass().getSimpleName() + " value :" + value.toString());
+	}
+	
+}

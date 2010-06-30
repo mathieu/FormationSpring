@@ -1,0 +1,32 @@
+package fr.softeam.formation.spring.exo3.dao.impl;
+
+import org.springframework.jdbc.core.support.JdbcDaoSupport;
+
+import fr.softeam.formation.spring.exo3.dao.iface.IPersonneDAO;
+import fr.softeam.spring.modele.Personne;
+
+public class PersonneDAO  extends JdbcDaoSupport implements IPersonneDAO {
+
+	@Override
+	public void creer(Personne personne) {
+		getJdbcTemplate().update("INSERT INTO Personne(id,nom,prenom,adresseMail) VALUES(?,?,?,?)", new Object[]{personne.getId(), personne.getNom(), personne.getPrenom(), personne.getAdresseMail()});
+	}
+
+	@Override
+	public Personne rechercherSelonId(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void sauver(Personne personne) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void supprimer(Personne personne) {
+		// TODO Auto-generated method stub
+		
+	} 
+}

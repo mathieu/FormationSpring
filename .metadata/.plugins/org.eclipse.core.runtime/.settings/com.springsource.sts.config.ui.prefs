@@ -1,0 +1,6 @@
+#Wed Jun 30 10:56:48 CEST 2010
+//com.springsource.config.ui.prefs.activePageIndex\:/Exo2/src/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>
+eclipse.preferences.version=1
+//com.springsource.config.ui.prefs.activePageIndex\:/Exo1/src/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage id\="com.springsource.sts.config.ui.editors.overview" index\="2" kind\="formPage"/>
+com.springsource.config.ui.prefs.tabs.dialog=always
+//com.springsource.config.ui.prefs.activePageIndex\:/Exo3/src/applicationContext.xml=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<activePage index\="0"/>

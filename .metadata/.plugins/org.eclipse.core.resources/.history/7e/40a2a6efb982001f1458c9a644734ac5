@@ -1,0 +1,23 @@
+package fr.softeam.formation.spring.exo1.application;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import fr.softeam.formation.spring.exo1.ICalculatrice;
+
+public class Application {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"applicationContext.xml"});
+		ICalculatrice calculatrice = (ICalculatrice) context.getBean("calculatrice");
+		
+		// Addition
+		System.out.println(calculatrice.additionner(10));
+		System.out.println(calculatrice.additionner(5));
+		
+		System.out.println(calculatrice.soustraire(25));
+		
+		System.out.println(calculatrice.diviser(2));
+		System.out.println(calculatrice.multiplier(5));
+		
+	}
+}

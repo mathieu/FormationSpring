@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="javax.imageio.IIOParamController"/>
+<fullyQualifiedTypeName name="fr.softeam.formation.spring.exo1.IOperation"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="fr.softeam.formation.spring.exo1.ICalculatrice"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Around"/>
+<fullyQualifiedTypeName name="java.lang.Throwable"/>
+<fullyQualifiedTypeName name="java.lang.Object"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Aspect"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
+<fullyQualifiedTypeName name="org.aspectj.lang.ProceedingJoinPoint"/>
+<fullyQualifiedTypeName name="fr.softeam.spring.modele.Reunion"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="fr.softeam.spring.modele.Salle"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.support.JdbcDaoSupport"/>
+<fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.simple.ParameterizedRowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource"/>
+<fullyQualifiedTypeName name="fr.softeam.formation.spring.exo3.dao.impl.PersonneDAO"/>
+<fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+<fullyQualifiedTypeName name="fr.softeam.formation.spring.exo3.dao.iface.IPersonneDAO"/>
+<fullyQualifiedTypeName name="fr.softeam.formation.spring.exo3.service.iface.IGestionnaireReunion"/>
+<fullyQualifiedTypeName name="sun.awt.PeerEvent"/>
+<fullyQualifiedTypeName name="org.springframework.dao.DataIntegrityViolationException"/>
+<fullyQualifiedTypeName name="fr.softeam.spring.modele.Personne"/>
+</qualifiedTypeNameHistroy>

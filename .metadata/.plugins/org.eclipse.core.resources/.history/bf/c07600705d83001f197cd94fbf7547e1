@@ -1,0 +1,13 @@
+package fr.softeam.formation.spring.exo2.advice;
+
+import org.aspectj.lang.ProceedingJoinPoint;
+
+public class LoggerAdviceXml {
+	
+	public Object log(ProceedingJoinPoint jp) throws Throwable {
+		System.out.println("LoggerAdviceXml.log() : before");
+		Object returnValue = jp.proceed();
+		System.out.println("LoggerAdviceXml.log() : after");
+		return returnValue;
+	}
+}

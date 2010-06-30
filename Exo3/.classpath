@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/ModelMetierReunion"/>
+	<classpathentry kind="lib" path="/Lib/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/aopalliance.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/asm-2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/asm-commons-2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/asm-util-2.2.3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/aspectjrt.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/aspectjweaver.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-collections.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/commons-pool.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/jta.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/spring.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/standard.jar"/>
+	<classpathentry kind="lib" path="/Lib/lib/spring-aop.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

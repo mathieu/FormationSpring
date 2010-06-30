@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=Exo3/src&lt;fr.softeam.formation.spring.exo3.dao.iface{IReunionDAO.java[IReunionDAO" modifiers="513" timestamp="1277825088272"/>
+<typeInfo handle="=Exo3/src&lt;fr.softeam.formation.spring.exo3.service.impl{GestionnaireReunionImpl.java[GestionnaireReunionImpl" modifiers="1" timestamp="1277888027638"/>
+<typeInfo handle="=Exo3/src&lt;fr.softeam.formation.spring.exo3.application{Application.java[Application" modifiers="1" timestamp="1277887510947"/>
+<typeInfo handle="=Exo3/src&lt;fr.softeam.formation.spring.exo3.service.iface{IGestionnaireReunion.java[IGestionnaireReunion" modifiers="513" timestamp="1277887977224"/>
+<typeInfo handle="=Exo3/src&lt;fr.softeam.formation.spring.exo3.dao.impl{PersonneDAOImpl.java[PersonneDAOImpl" modifiers="1" timestamp="1277887011082"/>
+<typeInfo handle="=ModelMetierReunion/src&lt;fr.softeam.spring.modele{Personne.java[Personne" modifiers="1" timestamp="1277728914867"/>
+</typeInfoHistroy>

@@ -1,0 +1,22 @@
+what,kind,bundleId,bundleVersion,description,time
+java.vm.specification.vendor,sysinfo,,,"Sun Microsystems Inc.",1277710206762
+java.vm.specification.version,sysinfo,,,"1.0",1277710206762
+java.vm.vendor,sysinfo,,,"Sun Microsystems Inc.",1277710206762
+java.vm.version,sysinfo,,,"14.3-b01",1277710206762
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277710646354
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711044772
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711046562
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711051883
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711517400
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711553101
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711569813
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711600811
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711603177
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711606554
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711614016
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711618990
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711619490
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711619585
+deactivated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711620277
+activated,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711622638
+closed,workbench,org.eclipse.ui.workbench,3.5.0.I20090603-2000,"",1277711622742

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><cheatsheet title="Introduction to OSGi and Equinox">
+   <intro>
+      <description>
+         This short tutorial will introduce you to the OSGi Service Platform and the Equinox OSGi implementation that ships with Eclipse. You'll learn how to start an OSGi container and how to use the console to manage a running OSGi platform.
+      </description>
+   </intro>
+   <item title="Workspace Setup" dialog="true" skip="false" onActivation="step1">
+      <description>
+         This step creates a project in the workspace that defines an Equinox launch profile.
+      </description>
+      <command serialization="com.springsource.sts.ide.help.command.SetupTutorial" confirm="false">
+      </command>
+   </item>
+                                         <item title="Set the &quot;target platform&quot;" onActivation="step2">
+                                            <description>
+                                               When Equinox is launched from within Eclipse it runs against a <b>target platform</b>.  A target platform is simply a convenient way of determining the set of modules (in OSGi modules are known as <b>bundles</b>) that should be loaded when Equinox starts. 
+
+<br/><br/>
+
+By default the target platform is set to point at your Eclipse installation directory as every Eclipse plugin is in fact a valid OSGi bundle, and Eclipse itself is an OSGi application. 
+
+<br/><br/>
+
+On the assumption that you&apos;re going to be working with Spring Dynamic Modules for OSGi based development, and to avoid including a whole set of bundles that we don&apos;t need, we&apos;re going to change the target platform.
+
+<br/><br/>
+
+Click the link below to open the &quot;target platform&quot; preferences page.
+
+<br/><br/>
+
+At the bottom of the preferences page you will see a section entitled &quot;Pre-defined targets&quot;. From the drop-down selection box choose the &quot;Spring Dynamic Modules for OSGi Service Platforms&quot; target and click on the Load Target button to the right. Click OK to close the preferences page.
+                                            </description>
+                                            <command required="false" serialization="org.eclipse.ui.window.preferences(preferencePageId=org.eclipse.pde.ui.TargetPlatformPreferencePage)"/>
+                                         </item>
+   <item title="Open the Run Configurations Dialog" dialog="true" skip="false" onActivation="step4">
+      <description>
+         The project you just created contains a launch profile called "Simple Equinox Launch". 
+
+<br/><br/>
+
+Click on the <b>Click to Perform</b> link below to open the launch dialog.
+      </description>
+      <command required="true" serialization="org.eclipse.debug.ui.commands.OpenRunConfigurations"/>
+   </item>
+   <item title="Launch Equinox" onActivation="step5">
+      <description>
+                                               With the Run dialog open, expand the <b>OSGi Framework</b> node in the left-hand pane and click on the <b>Simple Equinox Launch</b> profile.
+
+<br/><br/>
+
+There are two sets of OSGi bundles listed in the profile dialog: 
+
+<br/><br/>
+* <b>Workspace bundles</b> 
+<br/>lists any projects you have in your workspace that are valid OSGi bundles (typically these are Eclipse Plugin Projects - every Eclipse plugin is in fact an OSGi bundle).
+<br/><br/>
+* <b>Target platform</b> 
+<br/>lists all the bundles pre-installed in the workbench target platform (you can change the target platform by selecting the <b>Target Platform</b> entry under Plug-in Development Environment in the Eclipse <b>preferences</b>).
+
+<br/><br/>
+ 
+ Only one bundle is selected in this profile: the <b>org.eclipse.osgi</b> bundle, which is the Eclipse implementation of OSGi known as <b>Equinox</b>.
+ 
+ <br/><br/>
+ 
+ Click the <b>Run</b> button to launch the framework.
+
+
+      </description>
+   </item>
+   <item title="Exploring the Equinox console" onActivation="step6">
+      <description>
+         Open the console view if you don't already have it open.
+
+<br/><br/>
+
+You should see an <b>osgi&gt;</b> prompt in the console. Type "help" in console window (and press return) to see the list of available commands.
+
+<br/><br/>
+One of the most useful commands is <b>ss</b> (try it now).  This gives you a <b>short status</b> summary showing all of the modules (bundles) that the framework knows about and their current status (typically INSTALLED, RESOLVED or ACTIVE). We're running a minimal configuration so only the system bundle is present.
+
+<br/><br/>
+
+Every bundle has an id (the system bundle always has id 0). In the "bundle" column you see what is know as the <b>bundle symbolic name</b>concatenated with the bundle version. Every bundle has a symbolic name and version, which together uniquely identify that bundle within the framework.
+      </description>
+   </item>
+                                         <item title="Inspecting bundles" onActivation="step7">
+                                            <description>
+                                               Type the command "<b>bundle 0</b>" at the osgi&gt; prompt. (You can also type <b>bundle &lt;symbolic_name&gt;</b> to achieve the same result, but using the id saves typing!).
+
+<br/><br/>
+
+Bundles in OSGi interact with one another in one of two ways: by importing and exporting packages, and by registering and using services.
+
+<br/><br/>
+The information in the console output shows you all of the services that the system bundle has registered in the <b>OSGi Service Registry</b> - this information is available under the "Registered Services" heading.
+
+<br/><br/>
+Under the heading "Services in use:" you can also see the services that this bundle has looked up in the service registry and is currently using. 
+
+<br/><br/>
+
+The section "Exported Packages" lists all of the Java packages that this bundle makes available to other bundles in the system. Java types packaged inside the bundle but not exported are not visible to other bundles.
+
+<br/><br/>
+The section "Imported packages" shows all of the Java packages imported by this bundle.  An OSGi best practice is to "import what you export". Unless the package defining a Java type is either explicitly imported, or is defined locally within the bundle, it will not be visible from within the bundle.
+
+<br/><br/>
+If a bundle contained an import-package statement that could not be satisfied, then that bundle would fail to resolve, staying in the INSTALLED state. A useful command to know is <b>diag</b>, which reports on the constraints that could not be satisfied for a bundle. Try typing <b>diag 0</b> at the prompt.
+                                            </description>
+                                         </item>
+                                         <item title="Shut down Equinox" onActivation="step8">
+                                            <description>
+                                               Type <b>close</b> at the command prompt to cleanly shutdown Equinox.
+                                            </description>
+                                         </item>
+                                         <item title="Summary" onActivation="step9">
+                                            <description>
+                                               In this tutorial you learnt how to launch the Equinox OSGi framework, interact with the running system via the console, and shut the framework down cleanly again. 
+
+<br/><br/>
+To learn more about OSGi, you can now follow the "Writing an OSGi bundle" and "Understanding versioning in OSGi" tutorials.
+                                            </description>
+                                         </item>
+   <item title="Finish" dialog="true" skip="false" onActivation="step10">
+      <description>
+         This step deletes the projects that were created during setup.
+      </description>
+      <command serialization="com.springsource.sts.ide.help.command.TearDownTutorial" confirm="false">
+      </command>
+   </item>
+</cheatsheet>

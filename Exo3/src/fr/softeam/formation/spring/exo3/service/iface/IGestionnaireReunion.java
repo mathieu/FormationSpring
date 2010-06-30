@@ -1,0 +1,9 @@
+package fr.softeam.formation.spring.exo3.service.iface;
+
+import fr.softeam.spring.modele.Personne;
+
+public interface IGestionnaireReunion {
+	public void creerPersonne(String id, String nom, String prenom, String adresseMail);
+	public Personne rechercherPersonne(String id);
+	public void sauverPersonne(Personne personne);
+}

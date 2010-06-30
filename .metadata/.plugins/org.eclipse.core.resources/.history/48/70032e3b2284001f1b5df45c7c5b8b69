@@ -1,0 +1,5 @@
+package fr.softeam.formation.spring.exo3.service.impl;
+
+public class GestionnaireReunionImpl {
+
+}

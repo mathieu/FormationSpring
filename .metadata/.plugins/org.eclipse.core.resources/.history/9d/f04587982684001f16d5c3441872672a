@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd">
+
+
+	<bean id="personneDAO"
+		class="fr.softeam.formation.spring.exo3.dao.impl.PersonneDAOImpl">
+	<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="gestionnaireReunion"
+		class="fr.softeam.formation.spring.exo3.service.impl.GestionnaireReunionImpl">
+	<property name="personneDAO" ref="personneDAO"/>
+	</bean>
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="org.hsqldb.jdbcDriver">
+		</property>
+		<property name="url"
+			value="jdbc:hsqldb:hsql://localhost/reunion">
+		</property>
+		<property name="username" value="SA"></property>
+		<property name="password" value=""/>
+	</bean>
+	
+	<aop:config>
+		<aop:advisor pointcut="execution(* *..GestionnaireReunionImpl.(..))"  advice-ref="txAdvice"/>
+	</aop:config>
+	
+	<tx:advice id="txAdvice">
+		<tx:attributes>
+			<tx:method name="creer*"/>
+			<tx:method name="sauver*"/>
+			<tx:method name="*" read-only="true"/>
+		</tx:attributes>
+	</tx:advice>
+</beans>

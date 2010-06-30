@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tutorial>
+	<descriptor category="Introduction to OSGi"
+		id="org.springframework.osgi.intro-to-equinox" name="Introduction to Equinox"
+		version="1.0.0" kind="tutorial">
+		<description>
+			This tutorial will introduce the developer to OSGi development on Eclipse
+			Equinox.
+         </description>
+	</descriptor>
+	<project archiveFilename="Simple Equinox Launch.zip" name="Simple Equinox Launch" />
+	<task summary="Introduction to Equinox and OSGi">
+		<description>This short tutorial will show you how to run an OSGi
+			Service Platform using the Equinox implementation that ships with
+			Eclipse.</description>
+	</task>
+	<step filename="context17735.zip" id="step2" mode="replace" />
+</tutorial>

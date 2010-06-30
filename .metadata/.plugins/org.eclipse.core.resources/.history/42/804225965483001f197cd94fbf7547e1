@@ -1,0 +1,65 @@
+package fr.softeam.formation.spring.exo2.impl;
+
+import fr.softeam.formation.spring.exo1.ICalculatrice;
+import fr.softeam.formation.spring.exo1.IOperation;
+
+public class CalculatriceImpl implements ICalculatrice {
+
+	private IOperation operationAddition;
+	private IOperation operationMultiplication;
+	private IOperation operationDivision;
+	private IOperation operationSoustraction;
+	
+	private int total=0;
+	
+	public void setOperationAddition(IOperation operationAddition) {
+		this.operationAddition = operationAddition;
+	}
+
+	public void setOperationMultiplication(IOperation operationMultiplication) {
+		this.operationMultiplication = operationMultiplication;
+	}
+
+	public void setOperationDivision(IOperation operationDivision) {
+		this.operationDivision = operationDivision;
+	}
+
+	public void setOperationSoustraction(IOperation operationSoustraction) {
+		this.operationSoustraction = operationSoustraction;
+	}
+
+	@Override
+	public int additionner(int operande) {
+		total = operationAddition.calculer(total, operande);
+		return total;
+	}
+
+	@Override
+	public int diviser(int operande) {
+		total = operationDivision.calculer(total, operande);
+		return total;
+	}
+
+	@Override
+	public void initaliser() {
+		total=0;	
+	}
+
+	@Override
+	public int multiplier(int operande) {
+		total = operationMultiplication.calculer(total, operande);
+		return total;
+	}
+
+	@Override
+	public int recupererTotal() {
+		return total;
+	}
+
+	@Override
+	public int soustraire(int operande) {
+		total = operationSoustraction.calculer(total, operande);
+		return total;
+	}
+
+}

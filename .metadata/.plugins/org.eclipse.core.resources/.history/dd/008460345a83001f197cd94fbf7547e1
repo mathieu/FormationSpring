@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+	   
+	<aop:aspectj-autoproxy/>
+	<bean id="operationAddition" class="fr.softeam.formation.spring.exo2.impl.OperationPlusImpl"/>
+	<bean id="operationSoustraction" class="fr.softeam.formation.spring.exo2.impl.OperationSoustractionImpl"/>
+	<bean id="operationMultiplication" class="fr.softeam.formation.spring.exo2.impl.OperationMultiplicationImpl"/>
+	<bean id="operationDivision" class="fr.softeam.formation.spring.exo2.impl.OperationDivisionImpl"/>
+	
+	<bean id="calculatrice" class="fr.softeam.formation.spring.exo2.impl.CalculatriceImpl" scope="singleton">
+		<property name="operationAddition" ref="operationAddition"/>
+		<property name="operationSoustraction" ref="operationSoustraction"/>
+		<property name="operationMultiplication" ref="operationMultiplication"/>
+		<property name="operationDivision" ref="operationDivision"/>
+	</bean>
+	<bean id="loggerAdvice" name="loggerAdvice"
+		class="fr.softeam.formation.spring.exo2.advice.LoggerAdvice">
+	</bean>
+</beans>

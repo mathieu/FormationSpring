@@ -1,0 +1,11 @@
+package fr.softeam.formation.spring.exo2.impl;
+
+import fr.softeam.formation.spring.exo1.IOperation;
+
+public class OperationDivisionImpl implements IOperation {
+
+	@Override
+	public int calculer(int operande1, int operande2) {
+		return operande1 / operande2;
+	}	
+}
